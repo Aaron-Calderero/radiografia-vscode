@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Studio Code · Radiografía de una herramienta</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="volver" href="..">← Volver a mis proyectos</a>
+  <header class="titulo">
+    <h1>Visual Studio Code</h1>
+    <p>Un editor de código gratuito, ligero y ampliable con extensiones.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Por qué se usa tanto?</h2>
+      <p>Combina un editor rápido con depurador, terminal integrada y control de Git, todo en una sola ventana. Funciona en Windows, macOS y Linux.</p>
+    </section>
+
+    <section>
+      <h2>Atajos imprescindibles</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Atajo</th><th scope="col">Acción</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><kbd>Ctrl</kbd> + <kbd>P</kbd></td><td>Abrir un archivo por nombre</td></tr>
+          <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></td><td>Paleta de comandos</td></tr>
+          <tr><td>en ubuntu: <kbd>Ctrl</kbd> + <kbd>`</kbd></td><td>Mostrar u ocultar la terminal</td></tr>
+          <tr><td>en windows: <kbd>Ctrl</kbd> + <kbd>ñ</kbd></td><td>Mostrar u ocultar la terminal</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <button id="btn-paleta" type="button">&gt; Abrir paleta de comandos</button>
+    <p id="mensaje-estado" class="mensaje" role="status">Aún no has pulsado el botón.</p>
+
+    <section>
+      <h2>Más información</h2>
+      <button id="btn-info" type="button" aria-expanded="false" aria-controls="info-ampliada">Mostrar información ampliada</button>
+      <div id="info-ampliada" class="oculto">
+        <h3>Instalación</h3>
+        <p>Se descarga gratis desde la web oficial. En Linux también está disponible como paquete .deb, .rpm o Snap.</p>
+        <h3>Ventajas</h3>
+        <p>Es rápido, tiene una enorme comunidad y su Marketplace ofrece miles de extensiones para casi cualquier lenguaje.</p>
+        <h3>Extensiones recomendadas</h3>
+        <p>Live Server para servir la página en local, ESLint para detectar errores y Prettier para formatear el código.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Características</h2>
+      <label for="buscador">Buscar característica</label>
+      <input id="buscador" type="search" placeholder="Ej.: terminal, git, depurador" autocomplete="off">
+      <p id="sin-resultados" class="mensaje oculto" role="status">No hay características que coincidan con tu búsqueda.</p>
+      <ul id="lista-caracteristicas" class="lista"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Práctica · Radiografía de una herramienta de desarrollo</p>
+  </footer>
+</body>
+</html>

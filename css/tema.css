@@ -1,0 +1,50 @@
+:root {
+  --fondo: #1e1e1e;
+  --barra: #007acc;
+  --texto: #d4d4d4;
+  --tecla: #3c3c3c;
+  --acento: #569cd6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+}
+.titulo, main, footer { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem; }
+.titulo h1 { margin: 0; color: var(--acento); font-family: Consolas, monospace; }
+h2 { color: #4ec9b0; font-size: 1.2rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid #333; }
+th { color: var(--acento); }
+kbd {
+  background: var(--tecla);
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 0.05rem 0.4rem;
+  font-family: Consolas, monospace;
+  font-size: 0.9rem;
+}
+button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 0;
+  border-radius: 3px;
+  background: var(--barra);
+  color: #fff;
+  font-family: Consolas, monospace;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover { background: #1b8ad6; }
+footer {
+  max-width: none;
+  margin-top: 2rem;
+  background: var(--barra);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+}
+footer p { margin: 0 auto; max-width: 44rem; }
