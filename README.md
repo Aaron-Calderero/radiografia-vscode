@@ -45,6 +45,5 @@ README.md
 
 ## Cliente y servidor (evidencia de red)
 
-![Pestaña Red con las peticiones de HTML, CSS y módulos JavaScript](docs/captura-red.png)
-
+![alt text](image-1.png)
 El servidor local solo entrega archivos estáticos: `index.html`, `css/estilos.css` y los módulos `js/main.js`, `js/datos.js` y `js/interfaz.js`, todos con respuesta 200. El cliente (el navegador) interpreta el HTML, aplica el CSS y ejecuta el JavaScript: crea las tarjetas, filtra la búsqueda y reacciona a los clics sin volver a pedir nada al servidor. `main.js` se pide desde el HTML y este, a su vez, hace que el navegador pida `datos.js` e `interfaz.js` por sus `import`. Lo comprobé en la pestaña Red de las herramientas de desarrollo (F12), recargando la página, y en la consola no aparece ningún error.
